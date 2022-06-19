@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Nerko+One&family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.banner{
+    z-index: -1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(31, 24, 24);
+    overflow:hidden;
+}
+.content{
+    position: absolute;
+    top: 150px;
+}
+.content h2{
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+}
+.content h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%, 100%
+    {
+        clip-path: polygon(60% 39%, 84% 34%, 100% 38%, 100% 83%, 100% 100%, 50% 100%, 4% 100%, 2% 78%, 2% 60%, 36% 53%);
+    }
+        50%{
+            clip-path: polygon(52% 64%, 81% 65%, 99% 71%, 100% 83%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 53%, 26% 54%);
+        }
+}
+.banner{
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+    position: block;
+    
+}
+.btn{
+    
+    font-size: 36px;
+    text-align: center;
+    text-align:justify;
+    align-items: center;
+    
+    color: black;
+    justify-content: center;
+    background-color: rgb(242, 233, 233);
+    opacity: 50%;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.glow{
+    position: absolute;
+    top: 600px;
+}
+h1{
+    color:#111;
+    font-size: 3em;
+}
+h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(8) {
+    animation-delay: 2s;
+}
+h1 span:nth-child(9) {
+    animation-delay: 2.25s;
+}
+h1 span:nth-child(10) {
+    animation-delay: 2.5s;
+}
+
+@keyframes animate {
+    0%, 100%{
+        color:#fff;
+        filter: blur(2px);
+        text-shadow: 0 0 2px #00b3ff;
+        0 0 5px #00b3ff;
+        0 0 10px #00b3ff;
+        0 0 15px #00b3ff;
+        0 0 30px #00b3ff;
+        0 0 60px #00b3ff;
+        0 0 120px #00b3ff;
+
+    }
+    5%, 95%
+    {
+        color: #111;
+        filter: blur(0px);
+        text-shadow:0 0 10px none;
+    }
+}
